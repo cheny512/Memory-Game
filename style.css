@@ -1,0 +1,75 @@
+h1 {
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
+  font-size: 30px;
+}
+h4{
+  text-align: center;
+  font-size: 30px;
+}
+#game div {
+    border: 5px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    display: inline-block;
+    background-color: lightgray;
+    transition: 0.3s ease;
+  }
+  #game div:hover {
+    background-color: gray;
+    transform: scale(1.05);
+    
+  }
+#game {
+  display: grid;
+  grid-template-columns: repeat(4, 160px); /* Creates 4 columns */
+  grid-template-rows: repeat(4, 160px); /* Creates 4 rows */
+  grid-gap: 5px; /* Space between grid items */
+  justify-content: center; /* Center grid horizontally */
+  align-content: center; /* Center grid vertically */
+  margin: 0 auto; /* Center the grid container on the page */
+}
+.blur   {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  pointer-events: none;
+}
+#gameOver {
+  border-radius: 5px;
+  background-color: gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 15px solid gray;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-width: 200px;
+  min-height: 200px;
+}
+div#gameOver p {
+  font-size: 40px;
+}
+p {
+  text-align:center;  
+}
+button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
